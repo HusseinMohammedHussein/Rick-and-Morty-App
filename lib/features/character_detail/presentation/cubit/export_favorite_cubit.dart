@@ -1,0 +1,1 @@
+export 'package:rickandmorty_app/features/shared/presentation/cubit/favorites_cubit.dart';
