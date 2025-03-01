@@ -32,7 +32,6 @@ class _CharactersListWidgetState extends State<CharactersListWidget> {
   }
 
   void _onScroll() {
-    log('hasReachedMax:: ${homeCubit.hasReachedMax}');
     if (_isBottom && !homeCubit.hasReachedMax) {
       homeCubit.getCharactersWithFilters();
     }
