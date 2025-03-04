@@ -1,19 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:rickandmorty_app/core/helper/helper.dart';
 import 'package:rickandmorty_app/core/utils/custom_widget/base_scaffold.dart';
 import 'package:rickandmorty_app/features/home/presentation/widgets/characters_list_widget.dart';
 import 'package:rickandmorty_app/features/home/presentation/widgets/filter_widget.dart';
 
-class HomeView extends StatefulWidget {
+class HomeView extends StatelessWidget {
   const HomeView({super.key});
-
-  @override
-  State<HomeView> createState() => _HomeViewState();
-}
-
-class _HomeViewState extends State<HomeView> {
-
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +19,7 @@ class _HomeViewState extends State<HomeView> {
           children: [
             // search
             FilterWidget(),
+            // characters list
             Flexible(
               child: CharactersListWidget(),
             ),
